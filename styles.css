@@ -77,6 +77,12 @@ textarea:not([rows]) {
   --verbal-bg-clr: #f2fcf9;
   --visual-clr: #1125d6;
   --visual-bg-clr: #f3f4fd;
+
+  /* Font Sizes */
+  --fsxl: 4.5rem;
+  --fsl: 2rem;
+  --fsm: 1.5rem;
+  --fss: 1.125rem;
 }
 
 /* Utility Classes */
@@ -136,27 +142,27 @@ textarea:not([rows]) {
 /* Text Presets */
 .heading-xl {
   font-weight: 800;
-  font-size: 4.5rem;
+  font-size: var(--fsxl);
 }
 
 .heading-l {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: var(--fsl);
 }
 
 .heading-m {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--fsm);
 }
 
 .body-bold {
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: var(--fss);
 }
 
 .body-medium {
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: var(fss);
 }
 
 /* Body */
@@ -231,4 +237,60 @@ body {
 
 .summary a:hover {
   background: linear-gradient(to top, #302ce9, #7856ff);
+}
+
+/* Media Query */
+@media screen and (max-width: 46rem) {
+  /* Variables */
+  :root {
+    --fsxl: 3.5rem;
+    --fsl: 1.5rem;
+    --fsm: 1.125rem;
+    --fss: 1rem;
+  }
+
+  /* Body */
+  body {
+    display: block;
+  }
+
+  /* Main */
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Component */
+  .component {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Result */
+  .result {
+    width: 100%;
+    height: 50%;
+    gap: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .score {
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  /* Summary */
+  .summary {
+    width: 100%;
+    height: 50%;
+  }
+
+  .summary a {
+    max-width: 15rem;
+    margin-inline: auto;
+  }
 }
