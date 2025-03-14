@@ -1,0 +1,234 @@
+/* CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  /* display: block; */
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+/* CSS Reset */
+
+/* Variables */
+:root {
+  /* Colors */
+  --white: #fff;
+  --blue: #303b59;
+  --light-blue: #cac9ff;
+  --reaction-clr: #ff5555;
+  --reaction-bg-clr: #fff6f6;
+  --memory-clr: #ffb21e;
+  --memory-bg-clr: #fffbf4;
+  --verbal-clr: #00bb8f;
+  --verbal-bg-clr: #f2fcf9;
+  --visual-clr: #1125d6;
+  --visual-bg-clr: #f3f4fd;
+}
+
+/* Utility Classes */
+/* Colors */
+.white {
+  color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.reaction-clr {
+  color: var(--reaction-clr);
+}
+
+.reaction-bg-clr {
+  background-color: var(--reaction-bg-clr);
+}
+
+.memory-clr {
+  color: var(--memory-clr);
+}
+
+.memory-bg-clr {
+  background-color: var(--memory-bg-clr);
+}
+
+.verbal-clr {
+  color: var(--verbal-clr);
+}
+
+.verbal-bg-clr {
+  background-color: var(--verbal-bg-clr);
+}
+
+.visual-clr {
+  color: var(--visual-clr);
+}
+
+.visual-bg-clr {
+  background-color: var(--visual-bg-clr);
+}
+
+/* Text Presets */
+.heading-xl {
+  font-weight: 800;
+  font-size: 4.5rem;
+}
+
+.heading-l {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.heading-m {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.body-bold {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.body-medium {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+/* Body */
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #ecf2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Component */
+.component {
+  display: flex;
+  max-width: 46rem;
+  width: 100%;
+  border-radius: 2.5rem;
+}
+
+/* Result */
+.result {
+  width: 50%;
+  background: linear-gradient(to top, #302ce9, #7856ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 2.5rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: linear-gradient(to bottom, #302ce9, #7856ff);
+  border-radius: 50%;
+}
+
+/* Summary */
+.summary {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary div {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+.summary div h3 {
+  margin-inline: 1rem auto;
+}
+
+.summary a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-block: 0.75rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.summary a:hover {
+  background: linear-gradient(to top, #302ce9, #7856ff);
+}
